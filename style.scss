@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+
+.nav-container{
+    background: #1a1a1d;
+
+    
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1em;
+    }
+
+    a{
+        color: #950740;
+        
+        animation: animatie 2s ease;
+    }
+    
+    
+    .logo{
+        font-size: 2em;
+    }
+    
+    
+    .social-header{
+        display: flex;
+        color: #6F2232;
+        justify-content: center;
+        font-size: 2em;
+    
+        ul{
+            display: flex;
+            
+        }
+        li{
+            padding: 5px 10px;
+    
+        }
+
+    }
+    
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo{
+        color: #c3073f;
+    }
+    
+    .titlu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titlu-principal{
+        width: 50px;
+    }
+
+    
+}
+
+
+.hero{
+    background: #1a1a1d;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .content{
+        text-align: center;
+        color: #6F2232;
+        padding: 1em 0;
+    }
+    .meet{
+        font-size: 1.5em;
+        color: #6F2232;
+        
+    }
+}
+
+
+.hallucination-effect {
+    $url : url(img/triangle-hexagon-cube.png);
+    $offset : 5px;
+  
+    background-image: $url;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 250px;
+  
+    @supports (mix-blend-mode: multiply) {
+      position: relative;
+      overflow: hidden;
+      background-color: magenta;
+      background-blend-mode: screen;
+  
+      &:before, &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: inherit;
+        mix-blend-mode: multiply;
+        transform: scale(1.05);
+      }
+  
+      &:before {
+        background-color: yellow;
+        background-blend-mode: screen;
+        transform-origin: top left;
+      }
+  
+      &:after {
+        background-color: cyan;
+        background-blend-mode: screen;
+        transform-origin: bottom right;
+      }
+    }
+  }
+
+
+  .featured{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: #1a1a1d;
+      
+  
+    .subtitle{
+        color: #6F2232;
+        font-size: 1.5em;
+        padding: 2rem 1rem;
+    }
+    .featured-title{
+        font-size: 1.3em;
+        color: #950740;
+        padding: 2rem 1rem;
+    }
+    .featued-desc{
+        color: #950740;
+        padding: 2rem 2rem;
+    }
+    
+
+
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #1a1a1d;
+    color: #c3073f;
+    padding: 2em;
+
+    .skill-title{
+        font-size: 1.3em;
+    }
+
+}    
+
+.portofoilio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1a1a1d;
+    
+    text-align: center;
+    color: #6F2232;
+
+    .subtitle{
+        font-size: 1.5em;
+        color: #c3073f;
+    }
+    .featured-title{
+        font-size: 1.1em;
+        color: #c3073f;
+    }
+
+    img{
+        width: 550px;
+        padding: 2em 0;
+        border-radius: 20px;
+    }
+
+    .featured-desc{
+        padding: 2em;
+    }
+}    
+
+
+.spartitraffico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1d;
+
+    img{
+        width: auto;
+    }
+}
+
+
