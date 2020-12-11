@@ -51,6 +51,8 @@ img {
 
 .nav-container .logo {
   font-size: 2em;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
 }
 
 .nav-container .social-header {
