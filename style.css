@@ -49,10 +49,8 @@ img {
           animation: animatie 2s ease;
 }
 
-.nav-container .logo {
-  font-size: 2em;
-  -ms-flex-flow: nowrap;
-      flex-flow: nowrap;
+.nav-container .titlu {
+  padding: 1em;
 }
 
 .nav-container .social-header {
