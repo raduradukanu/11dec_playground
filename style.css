@@ -265,13 +265,14 @@ header .titlu-principal {
 }
 
 .portofoilio img {
-  width: 550px;
+  width: 400px;
   padding: 2em 0;
   border-radius: 20px;
 }
 
 .portofoilio .featured-desc {
   padding: 2em;
+  text-align: center;
 }
 
 .spartitraffico {
